@@ -59,7 +59,7 @@ function saludo(idioma) {
     return 'Hello!';
   }
   else{
-    return 'Hola';
+    return 'Hola!';
   }
 }
 
@@ -218,7 +218,10 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   var j = 0;
   var z = numero;
-}
+}do{
+  j++;
+  z = z + 5;
+}while (j < 8);
 
 
 // No modificar nada debajo de esta línea
