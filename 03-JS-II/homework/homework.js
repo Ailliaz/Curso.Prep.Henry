@@ -221,7 +221,7 @@ function doWhile(numero) {
 do{
   p = p + 1;
   z = z + 5;
-}while (j < 8);
+}while (p < 8);
 return z;
 }
 
