@@ -58,8 +58,9 @@ function saludo(idioma) {
   else if (idioma === 'ingles'){
     return 'Hello!';
   }
-
-  return 'Hola';
+  else{
+    return 'Hola';
+  }
 }
 
 function colors(color) {
@@ -98,10 +99,10 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   if (numero % 1 === 0){
-    return "true";
+    return true;
   }
 
-    return "false";
+    return false;
 
 }
 
@@ -174,7 +175,7 @@ function esPrimo(numero) {
   }
   
   for (let i = 2 ; i < numero ; i++){
-     if(numero % 0 === 0){
+     if(numero % i === 0){
        return false;
      } 
     }
