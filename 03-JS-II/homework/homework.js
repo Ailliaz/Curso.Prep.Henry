@@ -71,15 +71,12 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
 }
+
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero === 10 || numero === 5){
-  return "true";
-  }
-
-  return 'false';
+  return numero === 10 || numero === 5;
 
 }
 
@@ -88,12 +85,7 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  if (20 < numero && numero < 50){
-
-    return 'true';
-  }
-
-  return 'false';
+ return 20 < numero && numero < 50;
 
 }
 
@@ -144,19 +136,23 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-  if (num1 === 0 || num2 === 0 || num3 === 0){
+  if(num1 === 0 || num2 === 0 || num3 === 0){
 
     return 'Error';
   }
 
-  else if (num1 < 0 || num2 < 0 || num3 < 0){
+  else if(num1 < 0 || num2 < 0 || num3 < 0){
 
     return 'Hay negativos';
   }
 
-  else if (num1 > num2 && num1 > num3){
+  else if(num1 > num2 && num1 > num3){
 
     return "Número 1 es mayor y positivo";
+  }
+
+  else if(num3 > num1 && num3 > num2){
+    return num3 + 1;
   }
 
   return false;
@@ -169,29 +165,20 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-
-  var j = 0;
   if (numero === 0 || numero ===1){
 
-    return 'false';
+    return false;
   }
-  
+  else if(numero === 2){
+    return true;
+  }
   else {
     for (let i = 2 ; i < numero ; i++){
-
-      if (j > 0){
-        return "falso";
-      }
-
-      else if ((numero % i) === 0){
-
-        j++
-      }
+     if(numero % 0 === 0){
+       return false;
+     } 
     }
-  }
-  if (j === 0){
-
-    return 'true';
+    return true;
   }
 }
 
@@ -199,7 +186,7 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor){
+  if (valor === true){
     return 'Soy verdadero';
   }
 
@@ -216,10 +203,9 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (Math.isInteger(numero)){
-    if (Math.length(numer) === 3){
-      return true;
-    }
+  if (numero % 1 === 0 && Math.length(numero) === 3){
+
+      return true;   
   }
 
   return false;
@@ -231,12 +217,6 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   var j = 0;
   var z = numero;
-  while (j < 8){
-
-    z = z + 5;
-  }
-
-  return z;
 }
 
 
