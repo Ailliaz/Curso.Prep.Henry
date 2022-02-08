@@ -97,7 +97,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (Number.isInteger(numero)){
+  if (numero % 1 === 0){
     return "true";
   }
 
@@ -169,17 +169,17 @@ function esPrimo(numero) {
 
     return false;
   }
-  else if(numero === 2){
+  if(numero === 2){
     return true;
   }
-  else {
-    for (let i = 2 ; i < numero ; i++){
+  
+  for (let i = 2 ; i < numero ; i++){
      if(numero % 0 === 0){
        return false;
      } 
     }
-    return true;
-  }
+  return true;
+  
 }
 
 function esVerdadero(valor){
@@ -203,7 +203,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero % 1 === 0 && Math.length(numero) === 3){
+  if (numero > 99 && numero < 1000){
 
       return true;   
   }
