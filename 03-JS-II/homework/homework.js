@@ -219,7 +219,7 @@ function doWhile(numero) {
   var p = 0;
   var z = numero;
 }do{
-  p = p++;
+  p = p + 1;
   z = z + 5;
 }while (j < 8);
 
