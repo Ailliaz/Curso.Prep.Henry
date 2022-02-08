@@ -218,11 +218,12 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
   var p = 0;
   var z = numero;
-}do{
+do{
   p = p + 1;
   z = z + 5;
 }while (j < 8);
 return z;
+}
 
 
 // No modificar nada debajo de esta línea
