@@ -240,7 +240,7 @@ function breakStatement(numero) {
   let iteration = [];
   let number = numero;
 
-  for (let i = 0 ; i < 10 ; i++){
+  for (var i = 0 ; i < 10 ; i++){
     number = number + 2;
     if (i === number + 2) break;
     else {
