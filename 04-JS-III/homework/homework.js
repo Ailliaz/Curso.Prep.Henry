@@ -162,7 +162,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   let number = n.toString()
-  if (number.charAt(0) === 9){
+  if (number.charAt(0) === '9'){
     return true;
   }
   else {
@@ -226,6 +226,20 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let iteration = [];
+  let number = numero;
+
+  for (let i = 0 ; i < 10 ; i++){
+    if (i === number + 2) break;
+    else {
+      number = number + 2;
+      iteration[i];
+    }
+  }
+  if (i < 10){
+    return 'Se interrumpio la ejecución'
+  }
+  return iteration;
 }
 
 
@@ -236,6 +250,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let iteration = [];
+  let number = numero;
+
+  for (let i = 0 ; i < 10 ; i++){
+    if (i === 5) continue;
+    else {
+      number = number + 2;
+      iteration[i];
+    }
+  }
+  return iteration;
 }
 
 
