@@ -37,7 +37,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array.push(elemento);
+  return array;
 }
 
 
@@ -46,7 +47,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -130,7 +132,7 @@ function cuentoElementos(arreglo){
   let howMany = 0;
 
   for (let i = 0 ; i < arreglo.length ; i++){
-    if (18 < numeros[i]){
+    if (18 < arreglo[i]){
       howMany = howMany + 1;
     }
   }
@@ -144,13 +146,13 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if (numeroDeDia === 6 || numeroDeDia ===7){
+  if (numeroDeDia === 1 || numeroDeDia ===7){
 
     return 'Es fin de semana';
   }
   else {
 
-    return 'Es dia laboral'
+    return 'Es dia Laboral'
   }
 } 
 
@@ -159,7 +161,8 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  if (Math.floor(n / n.toString().length) === 9){
+  let number = n.toString()
+  if (number.charAt(0) === 9){
     return true;
   }
   else {
