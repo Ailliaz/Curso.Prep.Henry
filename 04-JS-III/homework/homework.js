@@ -233,7 +233,7 @@ function breakStatement(numero) {
     if (i === number + 2) break;
     else {
       number = number + 2;
-      iteration[i];
+      iteration.push(number);
     }
   }
   if (i < 10){
@@ -257,7 +257,7 @@ function continueStatement(numero) {
     if (i === 5) continue;
     else {
       number = number + 2;
-      iteration[i];
+      iteration.push(number);
     }
   }
   return iteration;
