@@ -122,7 +122,7 @@ function numeroMasGrande(numeros) {
 }
 
 
-function multiplicarArgumentos(arguments) {
+function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
@@ -134,7 +134,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   let howMany = 0;
 
-  for (let i = 0; i < numeros.length; i++){
+  for (let i = 0; i < arreglo.length; i++){
     if (18 < numeros[i]){
       howMany = howMany + 1;
     }
