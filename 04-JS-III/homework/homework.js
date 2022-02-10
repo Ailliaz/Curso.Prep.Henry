@@ -17,7 +17,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.length();
+  return array.length;
 }
 
 
@@ -56,12 +56,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  let phrase = palabras[0];
- 
-  for (let i = 1; i < palabras.length; i++){
-    frase = phrase + ' ' + palabras[i];
-  }
-  return phrase;
+  return palabras.join(' ');
 }
 
 
@@ -134,7 +129,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   let howMany = 0;
 
-  for (let i = 0; i < arreglo.length; i++){
+  for (let i = 0 ; i < arreglo.length ; i++){
     if (18 < numeros[i]){
       howMany = howMany + 1;
     }
@@ -155,7 +150,7 @@ function diaDeLaSemana(numeroDeDia) {
   }
   else {
 
-    return 'Es dia Laboral'
+    return 'Es dia laboral'
   }
 } 
 
@@ -178,7 +173,7 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   for (let i = 1 ; i < arreglo.length ; i++){
-    if (arreglo[i - 1] != areglo [i]){
+    if (arreglo[i - 1] != arreglo [i]){
       return false;
     }
   }
