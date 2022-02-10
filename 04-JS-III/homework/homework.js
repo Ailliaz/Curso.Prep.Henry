@@ -226,6 +226,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  /*
   let iteration = [];
   let number = numero;
 
@@ -240,6 +241,23 @@ function breakStatement(numero) {
     return 'Se interrumpio la ejecución';
   }
   return iteration;
+  */
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else {
+      array.push(suma);
+    }
+  }
+  if(i < 10) {
+    return 'Se interrumpió la ejecución';
+  }
+  else {
+      return array;
+  }
+}
 }
 
 
