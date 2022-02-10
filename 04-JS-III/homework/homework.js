@@ -248,7 +248,7 @@ function breakStatement(numero) {
     }
   }
   if (i < 10){
-    return 'Se interrumpio la ejecución';
+    return 'Se interrumpió la ejecución';
   }
 
   return iteration;
