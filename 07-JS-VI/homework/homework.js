@@ -48,12 +48,8 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  let newArray = [];
-  let i = 0;
-  array.forEach(function(slot,){
-    
-    newArray[i] = cb[slot];
-    i = i + 1;
+  let newArray = array.map(function (slot) {
+    return cb(slot);
   });
 }
 
