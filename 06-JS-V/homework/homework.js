@@ -37,7 +37,8 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function() {
-    var split = String.split("");
+    this.string = string; 
+    var split = string.split("");
     var reverse = split.reverse();
       return reverse.join("");
   };
