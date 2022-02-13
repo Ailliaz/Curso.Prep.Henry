@@ -4,6 +4,9 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+  var split = nombre.split("");
+  split[0] = split[0].toUpperCase();
+  return split.join("");
 }
 
 function invocarCallback(cb) {
