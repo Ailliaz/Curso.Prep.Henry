@@ -51,6 +51,7 @@ function map(array, cb) {
   let newArray = array.map(function (slot) {
     return cb(slot);
   });
+  return newArray;
 }
 
 function filter(array) {
