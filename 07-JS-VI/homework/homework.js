@@ -62,7 +62,7 @@ function filter(array) {
   let i = 0;
   var word = '';
   array.forEach(function (slot) {
-    if (slot.split("")[0] === "a") {
+    if (slot[0] === "a") {
       newArrey[i] = array[slot];
       i= i + 1;
     }
