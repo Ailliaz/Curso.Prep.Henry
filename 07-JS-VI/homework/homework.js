@@ -63,7 +63,7 @@ function filter(array) {
   var word = '';
   array.forEach(function (slot) {
     if (slot[0] === "a") {
-      newArrey[i] = array[slot];
+      newArrey[i] = slot;
       i= i + 1;
     }
   });
