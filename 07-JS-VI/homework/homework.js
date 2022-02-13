@@ -60,8 +60,9 @@ function filter(array) {
   //Tu código:
   let newArrey = [];
   let i = 0;
+  var word = '';
   array.forEach(function (slot) {
-    if (array[slot].split("")[0] === "a") {
+    if (slot.split("")[0] === "a") {
       newArrey[i] = array[slot];
       i= i + 1;
     }
