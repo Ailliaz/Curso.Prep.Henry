@@ -49,8 +49,11 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
   let newArray = [];
-  array.forEach(function(slot,index){
-    newArray[index] = cb[slot];
+  let i = 0;
+  array.forEach(function(slot,){
+    
+    newArray[i] = cb[slot];
+    i = i + 1;
   });
 }
 
